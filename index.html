@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/bb1c289bed.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body class="background__color">
+    <section id="landing-page">
+            <figure>
+                <img id="personal-background" src="./assets/logo.png" alt="">
+            </figure>
+        <nav>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--gold" onclick="toggleModal()">Location</a>
+                </li>
+                <li class="nav__link">
+                    <a href="https://www.facebook.com/twistedclippersbarbershop" target="_blank" class="nav__link--anchor link__hover-effect link__hover-effect--gold" onclick="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div>
+                <a href="#landing-page">
+                    <button class="schedule__btn click" onclick="toggleSchedule()">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </button>
+                </a>
+            </div>
+        </header>
+        <div class="schedule">
+            <div class="schedule__half schedule__thecut">
+                <h2 class="schedule__title schedule__title--thecut">
+                    <figure>
+                        <a href="https://app.thecut.co/barbers/cutsbychris" target="_blank"><img class="img schedule__img" src="assets/thecut.png" alt=""></a>
+                    </figure>
+                </h2>
+                <p class="schedule__para">
+                    Click to schedule an appointment with <span class="barber">Chris</span>, <br> or download <span class="bolded">The Cut</span> on the appstore
+                </p>
+                <figure class="app__wrapper">
+                    <a href="https://apps.apple.com/app/id1101408626" target="_blank"><img src="assets/applebutton.svg" class="img app__img"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.thecut.mobile.android.thecut" target="_blank"><img src="assets/googlebutton.svg" class="img app__img"></a>
+                </figure>
+            </div>
+            <div class="schedule__half schedule__booksy">
+                <h2 class="schedule__title schedule__title--booksy">
+                    <figure>
+                        <a href="https://booksy.com/en-us/483958_brittany-the-barber_barber-shop_122946_michigan-city?do=invite&_branch_match_id=1225275187252681041&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVD813KUsx8gxMyU0CAE0LCTgiAAAA" target="_blank"><img class="img schedule__img" src="assets/booksy.png" alt=""></a>
+                    </figure>
+                </h2>
+                <p class="schedule__para">
+                    Click to schedule an appointment with <span class="barber">Brittany</span>, <br> or download <span class="bolded">Booksy</span> on the appstore
+                </p>
+                <figure class="app__wrapper">
+                    <a href="https://apps.apple.com/us/app/booksy-for-customers/id723961236" target="_blank"><img src="assets/applebutton.svg" class="img app__img"></a>
+                    <a href="https://play.google.com/store/apps/details?id=net.booksy.customer&hl=en_US&gl=US" target="_blank"><img src="assets/googlebutton.svg" class="img app__img"></a>
+                </figure>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal__half modal__hours">
+               <h2 class="modal__title modal__title--hours">Days And Hours</h2>
+               <p class="modal__para modal__schedule">
+                Monday: Closed<br>
+                Tuesday: 10:00am - 7:00pm<br>
+                Wednesday: 10:00am - 7:00pm<br>
+                Thursday: 10:00am - 7:00pm<br>
+                Friday: 9:00am - 8:00pm<br>
+                Saturday: 9:00am - 8:00pm<br>
+                Sunday: Closed<br>
+                <figure>
+                    <img src="./assets/cut.jpeg" class="img cut" alt="">
+                </figure>
+               </p>
+            </div>
+            <div class="modal__half modal__location">
+                <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
+                <h2 class="modal__title modal__title--Location">
+                    Located At:
+                </h2>
+                <p class="modal__para location__address">
+                    301 W US Hwy 20 Suite 3 <br>
+                    Michigan City, In, 46360
+                </p>
+                <div><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.832147745422!2d-86.90291992351149!3d41.680968377733144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2211cfcbf9fd914d%3A0xbf958774fa195034!2sTwisted%20Clippers%20Barbershop!5e0!3m2!1sen!2sus!4v1693368863739!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+
+        </div>
+    </section>
+    <section id="cuts">
+        <div class="right__left--transition">
+            <div class="right__left">
+                <figure class="cut__wrapper">
+                    <img src="./assets/cleancut.jpeg" class="cuts__img right" alt="">
+                </figure>
+                <figure class="cut__wrapper">
+                    <img src="./assets/review1.png" class="review__img" alt="">
+                </figure>
+                <figure class="cut__wrapper">
+                    <img src="./assets/Drake.jpeg" class="cuts__img" alt="">
+                </figure>
+                <figure class="cut__wrapper">
+                    <img src="./assets/review4.png" class="review__img" alt="">
+                </figure>
+                <figure class="cut__wrapper">
+                    <img src="./assets/Cornrows.jpeg" alt="" class="cuts__img">
+                </figure>
+                <figure class="cut__wrapper">
+                    <img src="./assets/review2.png" alt="" class="review__img">
+                </figure>
+                <figure class="cut__wrapper">
+                    <img src="./assets/mohawk.jpeg" alt="" class="cuts__img">
+                </figure>
+                <figure class="cut__wrapper">
+                    <img src="./assets/review3.png" alt="" class="review__img">
+                </figure>
+            </div>
+            </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <div class="footer__social--list">
+                    <a href="https://www.instagram.com/twisted_clippers_barbershop/" target="_blank" class="
+                    footer__social--link
+                    icon__hover-effect">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/twistedclippersbarbershop" target="_blank" class="
+                    footer__social--link
+                    icon__hover-effect
+                    ">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                    </a>
+                    <a href="tel:2195615681" class="
+                    footer__social--link
+                    icon__hover-effect
+                    ">
+                        <i class="fa-solid fa-phone fa-2xl"></i>
+                    </a>
+                </div>
+                <div class="footer__copyright">Copyright ©Asim Hoskins 2023</div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 50){
+                    $("#personal-background").css({"opacity": "0.1"})
+                }
+                else{
+                    $("#personal-background").css({"opacity": "1"})
+                }
+            })
+        })
+    </script>
+</body>
+</html>
